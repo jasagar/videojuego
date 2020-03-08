@@ -9,16 +9,32 @@ public class Game {
 
 	public void movimiento(String m) {
 		if (m.equalsIgnoreCase(DERECHA)) {
-			j.setX(j.getX() + 1);
+			moverDerecha();
 		}
 		if (m.equalsIgnoreCase(IZQUIERDA)) {
-			j.setX(j.getX() - 1);
+			moverIzquierda();
 		}
 		if (m.equalsIgnoreCase(ARRIBA)) {
-			j.setY(j.getY() - 1);
+			moverArriba();
 		}
 		if (m.equalsIgnoreCase(ABAJO)) {
-			j.setY(j.getY() + 1);
+			moverAbajo();
 		}
+	}
+
+	private void moverAbajo() {
+		j.setY(j.getY() + 1);
+	}
+
+	private void moverArriba() {
+		j.setY(j.getY() - 1);
+	}
+
+	private void moverIzquierda() {
+		j.setX(j.getX() - 1);
+	}
+
+	private void moverDerecha() {
+		j.setX(j.getX() + 1);
 	}
 }
