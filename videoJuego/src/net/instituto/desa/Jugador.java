@@ -19,4 +19,19 @@ public class Jugador {
 		this.x = x;
 	}
 
+	void moverDerecha() {
+		setX(getX() + 1);
+	}
+
+	void moverIzquierda() {
+		setX(getX() - 1);
+	}
+
+	void moverArriba() {
+		setY(getY() - 1);
+	}
+
+	void moverAbajo() {
+		setY(getY() + 1);
+	}
 }
